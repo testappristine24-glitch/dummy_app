@@ -1,34 +1,5 @@
 version = 1
 
-test_patterns = ["test/**", "tests/**"]
-
-exclude_patterns = [
-  "lib/generated/**",
-  "build/**",
-  "**/*.g.dart",
-  "**/*.freezed.dart"
-]
-
-[[analyzers]]
-name = "dart"
-enabled = true
-
-  [analyzers.meta]
-  runtime_version = "3.x.x" # Change to your actual Dart version if needed
-
-  [analyzers.options]
-  report_level = "warning" # Downgrades all issues to warnings
-
-  # Ignore specific lint rules
-  ignore_rules = [
-    "prefer_const_constructors",
-    "avoid_print",
-    "non_constant_identifier_names",
-    "unused_import",
-    "file_names"
-  ]
-
 [[analyzers]]
 name = "dart-analyze"
 type = "community"
-enabled = true
