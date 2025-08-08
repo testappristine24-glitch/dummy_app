@@ -1,8 +1,7 @@
 version = 1
 
-version = 1
-
 test_patterns = ["test/**", "tests/**"]
+
 exclude_patterns = [
   "lib/generated/**",
   "build/**",
@@ -15,13 +14,13 @@ name = "dart"
 enabled = true
 
   [analyzers.meta]
-  runtime_version = "3.x.x" # adjust to your Dart version
+  runtime_version = "3.x.x" # Change to your actual Dart version if needed
 
   [analyzers.options]
-  report_level = "warning" # downgrade all issues to warnings
+  report_level = "warning" # Downgrades all issues to warnings
 
-  # Optional: Ignore specific rules completely
-  ignore_patterns = [
+  # Ignore specific lint rules
+  ignore_rules = [
     "prefer_const_constructors",
     "avoid_print",
     "non_constant_identifier_names",
@@ -32,3 +31,4 @@ enabled = true
 [[analyzers]]
 name = "dart-analyze"
 type = "community"
+enabled = true
