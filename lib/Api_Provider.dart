@@ -14,6 +14,8 @@ import 'package:delivoo/Models/CookieModel.dart';
 
 class ApiProvider {
   String? _baseUrl = BaseUrl;
+
+  
   Cookie? cook;
 
   //prefs
